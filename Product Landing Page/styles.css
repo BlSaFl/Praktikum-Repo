@@ -1,0 +1,153 @@
+/*.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+    background: #eee;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+}
+
+nav {
+    width: 50%;
+    justify-self: flex-end;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+img {
+    max-width: 300px;
+}
+
+main {
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+}
+
+#features div {
+    display: flex;
+}
+
+#features div div {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#features p,
+#features h2 {
+    margin: 0;
+    max-width: 75vw;
+}
+
+#features h2,
+#features img {
+    padding-top: 2rem;
+}
+
+#features img {
+    height: 70px;
+    align-self: center;
+    margin-right: 4rem;
+}
+
+iframe {
+    margin: 4rem;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+    border: 1px solid;
+    align-items: center;
+}
+
+.block>div {
+    background: #ddd;
+}
+
+.block>ul {
+    list-style-type: none;
+    padding: 1rem 3rem;
+}
+
+.button {
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.yellow-button {
+    background-color: #e1e151;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+input[class="yellow-button"] {
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        justify-items: space-between;
+        text-align: center;
+    }
+
+    #features img {
+        margin-right: 15px;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
